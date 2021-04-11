@@ -1,4 +1,4 @@
-# TipJar
+# TipHistory
 Android Coding Assignment
 
 Please follow the instructions below to complete this portion of the interview. 
@@ -13,7 +13,7 @@ We expect the assignment to be completed within 1 week, but if you need an exten
 ## Instructions
 
 - Clone this repo locally using git clone
-- Implement the following functionality and designs as specified: https://www.figma.com/file/Wjc3WG4kH8IFooV2DLv29v/TipJar?node-id=0%3A1
+- Implement the following functionality and designs as specified: https://www.figma.com/file/Wjc3WG4kH8IFooV2DLv29v/TipHistory?node-id=0%3A1
 - Feel free to export any image resources you may require.
 - It is not mandatory that you keep the project structure.
 

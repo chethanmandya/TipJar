@@ -6,5 +6,16 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="dark_gray">#CACACA</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="box_color">@color/white</color>
+    <color name="save_payment_color">#FFF27A0A</color>
+    <color name="bg_row_background">#fa315b</color>
+    <color name="navigation_icon_color">@color/white</color>
+
+
+
+
 </resources>

@@ -1,0 +1,34 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <variable
+            name="imagePath"
+            type="java.lang.String" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/capturedReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:receiptImage="@{imagePath}" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="@dimen/dimen_48"
+            android:layout_height="@dimen/dimen_48"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </FrameLayout>
+
+</layout>

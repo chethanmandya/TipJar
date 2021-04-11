@@ -1,0 +1,323 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.tipjar.viewmodels.HomeScreenViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolBarLayout"
+            layout="@layout/toolbar_home"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/saveButtonFrameLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBarLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_24"
+                android:orientation="vertical">
+
+
+                <!-- Enter your amount -->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/enter_amount_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_screen_enter_amount"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/enter_amount_InputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/shape_border_and_background_login"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/currencySelectionTextView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:gravity="center"
+                        android:text="@={viewModel.userInputValuesOnUi.selectedCurrency}"
+                        android:textColor="@color/black"
+                        android:textSize="42dp"
+                        android:textStyle="bold">
+
+                    </androidx.appcompat.widget.AppCompatTextView>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundMode="none">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/enter_amount_EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:imeOptions="actionSend"
+                            android:inputType="numberDecimal"
+                            android:text="@={viewModel.userInputValuesOnUi.enteredAmount}"
+                            android:textCursorDrawable="@null"
+                            android:textSize="42sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <!-- How many people -->
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/how_many_people_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_22"
+                    android:text="@string/home_screen_how_many_people"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/how_many_people_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/incrementingBtn"
+                        android:layout_width="71dp"
+                        android:layout_height="71dp"
+                        android:background="@drawable/ic_incrementing_btn"
+                        android:onClick="@{() -> viewModel.onPressingIncrement()}"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@={viewModel.userInputValuesOnUi.numberOfPeople}"
+                        android:textColor="@color/black"
+                        android:textSize="42sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/decrementingBtn"
+                        app:layout_constraintLeft_toRightOf="@+id/incrementingBtn"
+                        app:layout_constraintRight_toLeftOf="@+id/decrementingBtn"
+                        app:layout_constraintTop_toTopOf="@+id/incrementingBtn" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/decrementingBtn"
+                        android:layout_width="71dp"
+                        android:layout_height="71dp"
+                        android:background="@drawable/ic_decrementing_btn"
+                        android:onClick="@{() -> viewModel.onPressingDecrement()}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- % tip -->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/enter_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_22"
+                    android:text="@string/home_screen_tip"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tipInput"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    app:boxBackgroundColor="@color/box_color">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tipInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:text="@={viewModel.userInputValuesOnUi.enteredTipInPercentage}"
+                        android:textCursorDrawable="@null"
+                        android:textSize="42sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!-- total tip -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/totalTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_22">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_screen_total_tip"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:text="@{viewModel.userInputValuesOnUi.selectedCurrency + viewModel.resultedValuesToUi.totalTip}" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/perPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_screen_per_person"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="@{ viewModel.userInputValuesOnUi.selectedCurrency + viewModel.resultedValuesToUi.perPerson}" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Grand total -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/grandTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grand_total"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{viewModel.userInputValuesOnUi.selectedCurrency +  viewModel.resultedValuesToUi.grandTotal}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/saveReceiptCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_22"
+                    android:text="@string/take_photo_of_receipt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/perPerson" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <FrameLayout
+            android:id="@+id/saveButtonFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_rectangle_1464"
+                android:text="@string/home_screen_save_payment"
+                android:textColor="@color/white" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

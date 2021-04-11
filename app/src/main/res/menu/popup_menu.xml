@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_1"
+        android:title="$ - USD"
+        android:checked="true"
+        />
+    <item
+        android:id="@+id/option_2"
+        android:title="£ - GBP" />
+    <item
+        android:id="@+id/option_3"
+        android:title="€ - EUR" />
+
+    <item
+        android:id="@+id/option_4"
+        android:title="¥ - JPY" />
+    <item
+        android:id="@+id/option_5"
+        android:title="₹ - INR" />
+
+    <item
+        android:id="@+id/option_6"
+        android:title="₿ - Bitcoin" />
+</menu>
