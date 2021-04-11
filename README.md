@@ -1,47 +1,22 @@
-# TipHistory
-Android Coding Assignment
+### 1. Describe a project in detail in which you used Kotlin? Include links to apps if available
 
-Please follow the instructions below to complete this portion of the interview. 
-We expect the assignment to be completed within 1 week, but if you need an extension or have any questions regarding the assignment, please notify your Bitcoin.com hiring contact. 
-
-
-## Prerequisites:
-
-1. Android Studio (https://developer.android.com/studio)
-2. Git - For source control and to submit your solution to a your own **private** repo (https://git-scm.com/downloads) 
-        
-## Instructions
-
-- Clone this repo locally using git clone
-- Implement the following functionality and designs as specified: https://www.figma.com/file/Wjc3WG4kH8IFooV2DLv29v/TipHistory?node-id=0%3A1
-- Feel free to export any image resources you may require.
-- It is not mandatory that you keep the project structure.
-
-Once you have completed the assignment, push the code up to a new private repo and grant access to the following email addresses for code review 
-
-        - jonathan@bitcoin.com
-        - brendon@bitcoin.com    
-        - mahdi@bitcoin.com
-        
-***Then notify your Bitcoin.com hiring contact with a link to your private repo.***
+1. Everest, Luxury Rakuten Inc
+Project Description: The largest hotel booking App in Japan, It helps to Find great hotel or apartment deals and book in just a few minutes. whole travel trip in one app (accommodations, flights, car rentals, taxis and more)
 
 
-## Requirements
-
-- Use MVVM architectural design
-- Use Hilt Dependency Injection (Dagger2 or Koin is acceptable as well)
-- Write tests for the models you have created
-- Your project should be able to run
-
-## Bonus
-    
-1. Implement Delete and Search Receipts functionality
-3. Change currency functonality
-4. Animations or any UI elements to spice up the app. (Go wild!)
+Tools & Technologies: Live data, StateFlow, MultableState Flow, Observables, View model, Room, Life Cycle aware components, Dagger 2, Hilt for dependency injections, Kotlin Coroutines, Paging-3 library, Android Navigation components - deep link, View binding, Data binding including 2-way data binding, Android Compose.
 
 
-***Feel free to contact us if you need further requirement clarification*** 
+Contribution Link -
+Rakuten Contributions Page - https://drive.google.com/file/d/1aG6t5CzIq-eiHZtPp3RK-QhE_DjVVQ3B/view
+UI Automation of the App - https://drive.google.com/file/d/1dNIzkbjj8yPsdgXHFuvLtLo8isGiNPWk/view
 
-We look forward to receiving your submission.
 
-Good Luck
+2. IPL Lumea Philips Inc
+
+Project Description: Lumea is personal coach, helps to get the most out of new Philips Lumea devices (a hair removal product). The app creates a personal treatment plan for each of the body areas in the way the user likes it. app makes it easy to get the best possible result from Lumea device by following the right treatment schedule.
+
+Tools & Technologies: Live data, Observables, View model, Room, Life Cycle aware components, Dagger 2, Kotlin Coroutines, Paging-3 library, Android Navigation components - deep link, Data binding including 2-way data binding,
+
+Play Store Link - https://play.google.com/store/apps/details?id=com.philips.platform.lumea&hl=en
+
