@@ -20,3 +20,20 @@
 
     Play Store Link - https://play.google.com/store/apps/details?id=com.philips.platform.lumea&hl=en
 
+
+
+### Describe your experience using MVVM architectural design?
+
+Below are my links for the explainations on MVVM architecturem Jitpack components 
+
+[Architectural Component]https://github.com/chethu/Android-Architecture-Component
+https://github.com/chethu/Near-by-venus-browsing-sample-with-Android-Architecture-Components
+https://github.com/chethu/Android-Mediator-live-data-example
+
+https://github.com/chethu/Kotlin-MVVM-LiveData-Retrofit
+
+http://chethanmandya.com/2019/04/28/Android-Data-Binding.html
+
+http://chethanmandya.com/2019/09/01/Android-Coroutine-Example.html
+
+http://chethanmandya.com/2019/08/11/Live-Data.html
