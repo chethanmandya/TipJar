@@ -34,11 +34,11 @@ Below are my links for the explainations on MVVM architecturem Jitpack component
 
 - [Sample project on MVVM ¥, Live Data , Retrofit](https://github.com/chethu/Kotlin-MVVM-LiveData-Retrofit)
 
-- [Different form of live Data] (http://chethanmandya.com/2019/08/11/Live-Data.html)
+- [Different form of live Data](http://chethanmandya.com/2019/08/11/Live-Data.html)
 
-- [Overview of data binding] (http://chethanmandya.com/2019/04/28/Android-Data-Binding.html)
+- [Overview of data binding](http://chethanmandya.com/2019/04/28/Android-Data-Binding.html)
 
-- [Coroutine] (http://chethanmandya.com/2019/09/01/Android-Coroutine-Example.html)
+- [Coroutine](http://chethanmandya.com/2019/09/01/Android-Coroutine-Example.html)
 
 
 
