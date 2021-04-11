@@ -1,7 +1,7 @@
 ### App Demo 
 Please find UI and its functionality
-[App Demo Video](https://drive.google.com/file/d/1WeVL-YWhYKwDUvNO0i0BtJCuhFJVAsPy/view?usp=sharing)
-[App Demo Video on wetransfer](https://we.tl/t-UVMybkw9Fa)
+-[App Demo Video on Google drive](https://drive.google.com/file/d/1WeVL-YWhYKwDUvNO0i0BtJCuhFJVAsPy/view?usp=sharing)
+-[App Demo Video on wetransfer](https://we.tl/t-UVMybkw9Fa)
 
 
 ### Describe a project in detail in which you used Kotlin? Include links to apps if available
