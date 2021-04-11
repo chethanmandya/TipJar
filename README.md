@@ -30,8 +30,6 @@
 
 - [Github Sample to demonstrate on line and offline data in MVVM ](https://github.com/chethu/Near-by-venus-browsing-sample-with-Android-Architecture-Components)
 
-- [Understanding on Mediator live data ](https://github.com/chethu/Android-Mediator-live-data-example)
-
 - [Sample project on MVVM ¥, Live Data , Retrofit](https://github.com/chethu/Kotlin-MVVM-LiveData-Retrofit)
 
 - [Different form of live Data](http://chethanmandya.com/2019/08/11/Live-Data.html)
