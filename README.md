@@ -1,4 +1,4 @@
-### 1. Describe a project in detail in which you used Kotlin? Include links to apps if available
+### Describe a project in detail in which you used Kotlin? Include links to apps if available
 
 1. Everest, Luxury Rakuten Inc
       Project Description: The largest hotel booking App in Japan, It helps to Find great hotel or apartment deals and book in just a few minutes. whole travel trip in one app (accommodations, flights, car rentals, taxis and more)
@@ -26,14 +26,23 @@
 
 Below are my links for the explainations on MVVM architecturem Jitpack components 
 
-[Architectural Component]https://github.com/chethu/Android-Architecture-Component
-https://github.com/chethu/Near-by-venus-browsing-sample-with-Android-Architecture-Components
-https://github.com/chethu/Android-Mediator-live-data-example
+- [Architectural Component](https://github.com/chethu/Android-Architecture-Component)
 
-https://github.com/chethu/Kotlin-MVVM-LiveData-Retrofit
+- [Github Sample to demonstrate on line and offline data in MVVM ](https://github.com/chethu/Near-by-venus-browsing-sample-with-Android-Architecture-Components)
 
-http://chethanmandya.com/2019/04/28/Android-Data-Binding.html
+- [Understanding on Mediator live data ](https://github.com/chethu/Android-Mediator-live-data-example)
 
-http://chethanmandya.com/2019/09/01/Android-Coroutine-Example.html
+- [Sample project on MVVM ¥, Live Data , Retrofit](https://github.com/chethu/Kotlin-MVVM-LiveData-Retrofit)
 
-http://chethanmandya.com/2019/08/11/Live-Data.html
+- [Different form of live Data] (http://chethanmandya.com/2019/08/11/Live-Data.html)
+
+- [Overview of data binding] (http://chethanmandya.com/2019/04/28/Android-Data-Binding.html)
+
+- [Coroutine] (http://chethanmandya.com/2019/09/01/Android-Coroutine-Example.html)
+
+
+
+
+
+
+
