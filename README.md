@@ -24,7 +24,7 @@
 
 ### Describe your experience using MVVM architectural design?
 
-Below are my links for the explainations on MVVM architecturem Jitpack components 
+  Below are my links for the explainations on MVVM architecturem Jitpack components 
 
 - [Architectural Component](https://github.com/chethu/Android-Architecture-Component)
 
@@ -43,6 +43,8 @@ Below are my links for the explainations on MVVM architecturem Jitpack component
 
 
 
+### Describe your experience using Hilt Dependency Injection (Dagger2 or Koin is acceptable as well)
 
+### Create a detailed flow chart which showcases how a Bitcoin wallet works?
 
 
