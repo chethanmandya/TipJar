@@ -26,7 +26,7 @@ android {
         versionCode Dependencies.Apps.versionCode
         versionName Dependencies.Apps.versionName
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.example.tipjar.utils.TestRunner"
     }
 
     buildTypes {
@@ -44,6 +44,10 @@ android {
         useIR = true
     }
 
+    sourceSets {
+        androidTest.java.srcDirs += "src/test-common/java"
+        test.java.srcDirs += "src/test-common/java"
+    }
 
     dataBinding {
         enabled = true
@@ -127,17 +131,27 @@ dependencies {
     implementation Dependencies.AndroidX.Room.ktx
     kapt Dependencies.AndroidX.Room.compiler
 
-    // Junit Testing
-    testImplementation Dependencies.AndroidX.Test.core
-    testImplementation Dependencies.AndroidX.Test.mock
-    testImplementation Dependencies.AndroidX.Test.junit
-    testImplementation Dependencies.AndroidX.Test.coroutineTest
-    testImplementation Dependencies.AndroidX.Test.archCoreTest
-    testImplementation Dependencies.AndroidX.Test.rules
+   
 
-    // UI Test
-    androidTestImplementation Dependencies.AndroidX.Test.espressoCore
-    androidTestImplementation Dependencies.AndroidX.Test.espressoContrib
+    testImplementation Dependencies.AndroidX.Test.coroutineTest
+
+    testImplementation Dependencies.AndroidX.TestImplementation.junit
+    //testImplementation Dependencies.AndroidX.TestImplementation.mock_web_server
+    testImplementation Dependencies.AndroidX.TestImplementation.arch_core_testing
+    testImplementation Dependencies.AndroidX.TestImplementation.mockito_core
+
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.atsl_core
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.atsl_ext_junit
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.atsl_runner
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.atsl_rules
+
+
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.espresso_core
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.espresso_contrib
+
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.arch_core_testing
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.mockito_core
+    androidTestImplementation Dependencies.AndroidX.TestImplementation.mockito_android
 }
 
 
@@ -159,4 +173,11 @@ task ktlintFormat(type: JavaExec, group: 'formatting') {
     main = 'com.pinterest.ktlint.Main'
     classpath = configurations.ktlint
     args '--disabled_rules=no-wildcard-imports', '-F', 'src/**/*.kt'
+}
+
+// we need all open to run tests which we enable only for debug builds.
+project.tasks.whenTaskAdded {
+    if (it.name == "testReleaseUnitTest") {
+        it.enabled = false
+    }
 }
