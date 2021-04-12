@@ -12,7 +12,7 @@ object Dependencies {
         const val versionName = "1.0.0"
     }
 
-    const val androidGradlePlugin = "com.android.tools.build:gradle:7.0.0-alpha12"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:4.1.3"
 
     object AndroidX {
         private const val appcompactVersion = "1.3.0-alpha02"
@@ -90,6 +90,45 @@ object Dependencies {
             const val espressoContrib = "androidx.test.espresso:espresso-contrib:$versionsEspresso"
             const val espressoIntents = "androidx.test.espresso:espresso-intents:$versionsEspresso"
 
+        }
+
+
+        object TestImplementation {
+
+            private const val versions_atsl_core = "1.2.0"
+            private const val versions_atsl_junit = "1.1.1"
+            private const val versions_atsl_runner = "1.2.0"
+            private const val versions_atsl_rules = "1.2.0"
+
+            const val atsl_core = "androidx.test:core:$versions_atsl_core"
+            const val atsl_ext_junit = "androidx.test.ext:junit:$versions_atsl_junit"
+            const val atsl_runner = "androidx.test:runner:$versions_atsl_runner"
+            const val atsl_rules = "androidx.test:rules:$versions_atsl_rules"
+
+
+            private const val versions_espresso = "3.2.0"
+            const val espresso_core = "androidx.test.espresso:espresso-core:$versions_espresso"
+            const val espresso_contrib =
+                "androidx.test.espresso:espresso-contrib:$versions_espresso"
+            const val espresso_intents =
+                "androidx.test.espresso:espresso-intents:$versions_espresso"
+
+
+            private const val versions_mockito = "2.25.0"
+            private const val versions_mockito_all = "1.10.19"
+            private const val versions_mockito_android = "2.25.0"
+            const val mockito_core = "org.mockito:mockito-core:$versions_mockito"
+            const val mockito_all = "org.mockito:mockito-all:$versions_mockito_all"
+            const val mockito_android = "org.mockito:mockito-android:$versions_mockito_android"
+
+
+            private const val versions_junit = "4.12"
+            const val junit = "junit:junit:$versions_junit"
+
+
+            private const val versions_arch_core = "2.1.0"
+            const val arch_core_runtime = "androidx.arch.core:core-runtime:$versions_arch_core"
+            const val arch_core_testing = "androidx.arch.core:core-testing:$versions_arch_core"
         }
 
         object Room {
