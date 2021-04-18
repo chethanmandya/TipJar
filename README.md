@@ -38,7 +38,7 @@ In addition to specified requirement, I have provided blow functionality
 
 - [Architectural Component](https://github.com/chethu/Android-Architecture-Component)
 
-- [Github Sample to demonstrate on line and offline data in MVVM ](https://github.com/chethu/Near-by-venus-browsing-sample-with-Android-Architecture-Components)
+- [Github Sample to demonstrate online and offline data in MVVM ](https://github.com/chethu/Near-by-venus-browsing-sample-with-Android-Architecture-Components)
 
 - [Sample project on MVVM ¥, Live Data , Retrofit](https://github.com/chethu/Kotlin-MVVM-LiveData-Retrofit)
 
