@@ -32,7 +32,4 @@ In addition to specified requirement, I have provided blow functionality
 
 [My explaination on Hilt Dependency Inject](https://github.com/chethu/Hilt-Dependency-Injection)
 
-### Create a detailed flow chart which showcases how a Bitcoin wallet works?
-
-[Here is my research on how bitcoin works](https://github.com/chethu/How-bitcoin-works/blob/main/BitCoinWork-Flow.md)
 
