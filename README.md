@@ -1,7 +1,8 @@
 ### App Demo 
 Please find UI and its functionality
-- https://user-images.githubusercontent.com/3158100/139616908-63d4f217-eae2-4760-985d-196f447dbbba.mp4
-- 
+
+https://user-images.githubusercontent.com/3158100/139616908-63d4f217-eae2-4760-985d-196f447dbbba.mp4
+ 
 ###  MVVM architectural design?
 
   Below are my links for the explainations on MVVM architecturem Jitpack components 
