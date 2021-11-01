@@ -1,7 +1,6 @@
 ### App Demo 
 Please find UI and its functionality
 - [App Demo Video on Google drive](https://drive.google.com/file/d/1WeVL-YWhYKwDUvNO0i0BtJCuhFJVAsPy/view?usp=sharing)
-- [App Demo Video on wetransfer](https://we.tl/t-UVMybkw9Fa)
 
 In addition to specified requirement, I have provided blow functionality 
   - Swipe to remove the tip History
