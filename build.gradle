@@ -11,7 +11,7 @@ buildscript {
     dependencies {
         classpath Dependencies.androidGradlePlugin
         classpath Dependencies.Kotlin.gradlePlugin
-        classpath Dependencies.HILT.gradle_plugin
+        classpath Dependencies.HILT.hiltPlugin
         classpath Dependencies.AndroidX.Navigation.safeArg
         classpath Dependencies.Kotlin.allopen
     }

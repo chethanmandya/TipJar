@@ -113,8 +113,9 @@ class HomeScreenFragment : Fragment() {
 
         popup.setOnMenuItemClickListener { item: MenuItem ->
 
-            val currencySymbol: String = item.title.split("-")[0]
-            binding.currencySelectionTextView.text = currencySymbol
+            item.title?.split("-")?.getOrNull(0)?.let { currencySymbol ->
+                binding.currencySelectionTextView.text = currencySymbol
+            }
 
             true
         }

@@ -3,11 +3,10 @@ import com.chethan.buildsrc.Dependencies
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
     id 'androidx.navigation.safeargs'
     id 'kotlin-allopen'
+    id("com.google.dagger.hilt.android")
 }
 
 
@@ -17,6 +16,10 @@ allOpen {
 }
 
 android {
+
+
+    namespace 'com.example.tipjar'
+
     compileSdkVersion Dependencies.Apps.compileSdk
 
     defaultConfig {
@@ -41,7 +44,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-        useIR = true
     }
 
     sourceSets {
@@ -61,6 +63,10 @@ android {
 
 configurations {
     ktlint
+}
+
+kapt {
+    correctErrorTypes = true
 }
 
 dependencies {
@@ -107,11 +113,7 @@ dependencies {
 
     // Hilt dependency Injection
     implementation Dependencies.HILT.android
-    implementation Dependencies.HILT.viewModel
-    implementation 'androidx.room:room-runtime:2.2.6'
-    annotationProcessor 'androidx.room:room-compiler:2.2.6'
-    kapt Dependencies.HILT.compiler
-    kapt Dependencies.HILT.viewModelCompiler
+    kapt Dependencies.HILT.androidHiltKept
 
     //Lint warnings
     ktlint Dependencies.LINT.ktlint
@@ -152,6 +154,7 @@ dependencies {
     androidTestImplementation Dependencies.AndroidX.TestImplementation.arch_core_testing
     androidTestImplementation Dependencies.AndroidX.TestImplementation.mockito_core
     androidTestImplementation Dependencies.AndroidX.TestImplementation.mockito_android
+
 }
 
 

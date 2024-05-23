@@ -18,20 +18,20 @@ class SingleFragmentActivity : AppCompatActivity() {
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT
             )
-            id = R.id.container
+            id = R.id.nav_host_container
         }
         setContentView(content)
     }
 
     fun setFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
-            .add(R.id.container, fragment, "TEST")
+            .add(R.id.nav_host_container, fragment, "TEST")
             .commit()
     }
 
     fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment)
+            .replace(R.id.nav_host_container, fragment)
             .commit()
     }
 }

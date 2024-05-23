@@ -1,6 +1,5 @@
 package com.example.tipjar.viewmodels
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,10 +10,13 @@ import com.example.tipjar.model.ResultedValues
 import com.example.tipjar.model.UserInputValues
 import com.example.tipjar.testing.OpenForTesting
 import com.example.tipjar.utils.addOnPropertyChanged
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 @OpenForTesting
-class HomeScreenViewModel @ViewModelInject constructor(private val tipCalculator: Calculator) :
+@HiltViewModel
+class HomeScreenViewModel @Inject constructor(private val tipCalculator: Calculator) :
     ViewModel() {
 
     val userInputValuesOnUi = UserInputValues()

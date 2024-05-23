@@ -5,20 +5,20 @@ object Dependencies {
 
 
     object Apps {
-        const val compileSdk = 30
+        const val compileSdk = 34
         const val minSdk = 23
         const val targetSdk = 30
         const val versionCode = 1
         const val versionName = "1.0.0"
     }
 
-    const val androidGradlePlugin = "com.android.tools.build:gradle:4.1.3"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:8.0.0"
 
     object AndroidX {
         private const val appcompactVersion = "1.3.0-alpha02"
         private const val coreKtxVersion = "1.5.0-alpha04"
 
-        private const val nav_version = "2.3.1"
+        private const val nav_version = "2.5.0"
 
         const val appcompat = "androidx.appcompat:appcompat:$appcompactVersion"
         const val palette = "androidx.palette:palette:1.0.0"
@@ -132,7 +132,7 @@ object Dependencies {
         }
 
         object Room {
-            private const val version = "2.3.0-alpha04"
+            private const val version = "2.6.1"
             const val runtime = "androidx.room:room-runtime:$version"
             const val ktx = "androidx.room:room-ktx:$version"
             const val compiler = "androidx.room:room-compiler:$version"
@@ -141,12 +141,12 @@ object Dependencies {
         object Lifecycle {
             private const val version = "2.2.0"
             const val extensions = "androidx.lifecycle:lifecycle-extensions:$version"
-            const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
-            const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$version"
+            const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+            const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
         }
 
         object Fragment {
-            private const val version = "1.3.0-beta01"
+            private const val version = "1.4.1"
             const val fragment_ktx = "androidx.fragment:fragment-ktx:$version"
         }
 
@@ -160,7 +160,7 @@ object Dependencies {
 
 
     object Kotlin {
-        private const val version = "1.4.21"
+        private const val version = "1.9.0"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$version"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
         const val extensions = "org.jetbrains.kotlin:kotlin-android-extensions:$version"
@@ -191,15 +191,11 @@ object Dependencies {
 
 
     object HILT {
-        private const val hiltVersion = "2.29.1-alpha"
-        private const val hiltViewModel = "1.0.0-alpha02"
+        private const val hiltVersion = "2.46.1"
 
         const val android = "com.google.dagger:hilt-android:$hiltVersion"
-        const val compiler = "com.google.dagger:hilt-android-compiler:$hiltVersion"
-        const val gradle_plugin = "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
-
-        const val viewModel = "androidx.hilt:hilt-lifecycle-viewmodel:$hiltViewModel"
-        const val viewModelCompiler = "androidx.hilt:hilt-compiler:$hiltViewModel"
+        const val androidHiltKept = "com.google.dagger:hilt-compiler:$hiltVersion"
+        const val hiltPlugin = "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
     }
 
 
